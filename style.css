@@ -26,10 +26,12 @@ body {
   height: 80vh;
   border-radius: 50px;
   cursor: pointer;
+  color: #fff;
   flex: 0.5;
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
+  
 }
 
 .panel h3 {
@@ -43,10 +45,12 @@ body {
 
 .panel.active {
   flex: 5;
+  object-fit: cover;
 }
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width: 480px) {
